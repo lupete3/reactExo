@@ -16,7 +16,7 @@ function ShoppingList(){
 			</ul>
 			<ul>
 				{plantList.map((plant) => (
-					<li key={plant.id}>{plant.name} {plant.isBestSale ? <b>best</b> : null}</li>
+					<li key={plant.id}>{plant.name} {(plant.isBestSale || plant.category === "classique") && <b>best</b> }</li>
 				))}
 			</ul>
 		</div>
