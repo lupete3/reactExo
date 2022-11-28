@@ -1,16 +1,18 @@
+import '../styles/Cart.css'
+
 function Cart(){
     const monsteraPrice = 8
     const lierrePrice = 10
     const bouquetPrice = 15
     
-    return(<div>
+    return(<div className="lmj-cart">
         <h2>Panier</h2>
         <ul>
             <li>Monstera : {monsteraPrice}</li>
             <li>Lierra : {lierrePrice}</li>
             <li>Bouquet de fleurs : {bouquetPrice}</li>
         </ul>
-        <h3>Total : {monsteraPrice + lierrePrice + bouquetPrice}</h3>
+        <h4>Total : {monsteraPrice + lierrePrice + bouquetPrice}</h4>
     </div>)
 }
 
